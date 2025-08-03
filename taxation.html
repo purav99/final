@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxation Services – Darbia</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            dark: '#0F0F0F',
+            light: '#F9F9F9',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f1eb;
+    }
+    .underline-gold::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #D4AF37;
+      margin: 8px auto 0;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-[#f4f1eb] text-dark">
+
+  <header class="bg-[#f4f1eb] text-dark shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <img src="/images/pogo.png" alt="Darbia Logo" class="h-20 w-auto">
+      </div>
+
+      <!-- Desktop Menu -->
+<nav class="hidden md:flex flex-1 justify-center items-center space-x-4 text-base whitespace-nowrap min-w-0">
+  <a href="index.html" class="hover:text-gold transition">Home</a>
+  <a href="about.html" class="hover:text-gold transition">About Us</a>
+  <a href="accounting-bookkeeping.html" class="hover:text-gold transition">Accounting & Bookkeeping</a>
+  <a href="audit.html" class="hover:text-gold transition">Auditing</a>
+  <a href="taxation.html" class="hover:text-gold transition">Taxation</a>
+  <a href="compliance.html" class="hover:text-gold transition">Compliance</a>
+  <a href="Other services.html" class="hover:text-gold transition">Other Services</a>
+  <a href="contact.html" class="hover:text-gold transition">Contact</a>
+</nav>
+
+     <!-- Right: Apply Online -->
+    <div class="hidden md:block flex-shrink-0 ml-4">
+      <a href="contact.html" class="bg-[#3d2c06] text-white font-semibold text-sm px-4 py-2 rounded-md shadow hover:bg-gray-800 transition">
+        Apply Online
+      </a>
+    </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="menuToggle" class="md:hidden text-gold focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden px-4 py-4 bg-white border-t border-gold space-y-2">
+      <a href="index.html" class="block text-dark hover:text-gold">Home</a>
+      <a href="about.html" class="block text-dark hover:text-gold">About Us</a>
+      <a href="accounting-bookkeeping.html" class="block text-dark hover:text-gold">Accounting & Bookkeeping</a>
+      <a href="audit.html" class="block text-dark hover:text-gold">Auditing | Audit Support</a>
+      <a href="taxation.html" class="block text-dark hover:text-gold">Taxation</a>
+      <a href="compliance.html" class="block text-dark hover:text-gold">Compliance</a>
+      <a href="Other services.html" class="block text-dark hover:text-gold">Other Services</a>
+      <a href="contact.html" class="block text-dark hover:text-gold">Contact</a>
+    </div>
+  </header>
+<!-- Hero Section -->
+<section class="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white text-center px-6 md:px-12" style="background-image: url('/images/bgconatct5.jpg');">
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 max-w-4xl">
+    <h1 class="text-5xl md:text-6xl font-bold text-gold mb-8 leading-tight">Taxation Services</h1>
+    <p class="text-xl md:text-2xl leading-relaxed mb-4">
+      Our taxation services ensure full compliance with UAE tax laws while optimizing your company’s tax position.
+    </p>
+    <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
+      From VAT registration and corporate tax filing to strategic tax advisory, Darbia supports businesses with end-to-end tax compliance solutions.
+    </p>
+  </div>
+</section>
+
+<!-- Taxation Subservices Section -->
+<section class="py-20 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#3d2c06] mb-12 text-center">Our Taxation Services Include</h2>
+    <div class="space-y-20">
+
+      <!-- Subservice 1 -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <img src="/images/vat-filing.jpg" alt="VAT Filing" class="w-full rounded-xl shadow-md">
+        <div>
+          <h3 class="text-xl font-semibold text-[#3d2c06] mb-2">UAE VAT Registration & Filing</h3>
+          <p class="text-gray-800 text-lg mb-2">Assistance with VAT registration and regular returns submission as per FTA guidelines.</p>
+          <p class="text-gray-700">We ensure timely VAT return filings, handle input and output tax reconciliations, and provide full compliance documentation in accordance with UAE law.</p>
+        </div>
+      </div>
+
+      <!-- Subservice 2 -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h3 class="text-xl font-semibold text-[#3d2c06] mb-2">Corporate Tax (CT) Filing & Compliance</h3>
+          <p class="text-gray-800 text-lg mb-2">Preparation and filing of corporate tax returns under the UAE's Corporate Tax regime.</p>
+          <p class="text-gray-700">We help assess tax obligations, prepare necessary documentation, and ensure accurate filings with the Federal Tax Authority (FTA).</p>
+        </div>
+        <img src="/images/corporate-tax.jpg" alt="Corporate Tax" class="w-full rounded-xl shadow-md">
+      </div>
+
+      <!-- Subservice 3 -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <img src="/images/withholding-tax.jpg" alt="Withholding Tax" class="w-full rounded-xl shadow-md">
+        <div>
+          <h3 class="text-xl font-semibold text-[#3d2c06] mb-2">Withholding Tax Support</h3>
+          <p class="text-gray-800 text-lg mb-2">Guidance on withholding tax obligations on cross-border payments.</p>
+          <p class="text-gray-700">We ensure your business remains compliant when dealing with international payments, and we help you understand exemptions, rates, and documentation requirements.</p>
+        </div>
+      </div>
+
+      <!-- Subservice 4 -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h3 class="text-xl font-semibold text-[#3d2c06] mb-2">Tax Audit Representation</h3>
+          <p class="text-gray-800 text-lg mb-2">Acting on your behalf during tax audits and addressing queries raised by authorities.</p>
+          <p class="text-gray-700">Our experts liaise directly with auditors, ensure that necessary documents are provided, and help you respond effectively to all tax authority inquiries.</p>
+        </div>
+        <img src="/images/tax-audit.jpg" alt="Tax Audit" class="w-full rounded-xl shadow-md">
+      </div>
+
+      <!-- Subservice 5 -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <img src="/images/tax-planning.jpg" alt="Tax Planning" class="w-full rounded-xl shadow-md">
+        <div>
+          <h3 class="text-xl font-semibold text-[#3d2c06] mb-2">Tax Planning & Advisory</h3>
+          <p class="text-gray-800 text-lg mb-2">Strategic tax planning to reduce liabilities and improve financial outcomes.</p>
+          <p class="text-gray-700">We develop tax-efficient structures, evaluate deductions and credits, and guide long-term planning to optimize tax benefits across your business operations.</p>
+        </div>
+      </div>
+
+      <!-- Subservice 6 -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h3 class="text-xl font-semibold text-[#3d2c06] mb-2">Tax Residency Certificate Assistance</h3>
+          <p class="text-gray-800 text-lg mb-2">Help in obtaining TRCs for individuals and companies for double tax treaty benefits.</p>
+          <p class="text-gray-700">We handle the entire TRC application process including documentation, submission to relevant authorities, and follow-up to ensure approval.</p>
+        </div>
+        <img src="/images/tax-residency.jpg" alt="Tax Residency Certificate" class="w-full rounded-xl shadow-md">
+      </div>
+
+      <!-- Subservice 7 -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <img src="/images/esr.jpg" alt="ESR Support" class="w-full rounded-xl shadow-md">
+        <div>
+          <h3 class="text-xl font-semibold text-[#3d2c06] mb-2">Economic Substance Regulation (ESR) Support</h3>
+          <p class="text-gray-800 text-lg mb-2">Ensuring your business meets ESR requirements through reporting and advisory services.</p>
+          <p class="text-gray-700">We assess whether your entity falls under ESR scope, prepare reports, submit notifications, and provide recommendations to fulfill substance tests.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="relative py-20 bg-[#f4f1eb] text-center overflow-hidden">
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.05)_1px,transparent_1px)] bg-[size:40px_40px] opacity-10 z-0"></div>
+  <div class="relative z-10">
+    <h3 class="text-3xl font-bold text-[#3d2c06] mb-4 underline-gold">Need Tax Help in the UAE?</h3>
+    <p class="text-gray-700 mb-6">Let Darbia guide you through UAE tax laws and ensure full compliance while minimizing your liabilities.</p>
+    <a href="/views/contact.html" class="px-6 py-3 bg-[#3d2c06] text-white font-semibold rounded-full shadow hover:shadow-xl transition">
+      Talk to Our Tax Experts
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#3d2c06] text-white py-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <p>&copy; 2025 Darbia. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

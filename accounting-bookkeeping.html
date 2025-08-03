@@ -1,0 +1,300 @@
+<!-- Accounting & Bookkeeping Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accounting & Bookkeeping – Darbia</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            dark: '#0F0F0F',
+            light: '#F9F9F9',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f1eb;
+    }
+    .underline-gold::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #D4AF37;
+      margin: 8px auto 0;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-[#f4f1eb] text-dark flex flex-col min-h-screen">
+  <!-- Page Content Wrapper -->
+  <div class="flex-grow">
+
+    <!-- Header -->
+    <header class="bg-[#f4f1eb] text-dark shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+        <div class="flex-shrink-0">
+          <img src="/images/pogo.png" alt="Darbia Logo" class="h-20 w-auto">
+        </div>
+        <nav class="hidden md:flex flex-1 justify-center items-center space-x-4 text-base whitespace-nowrap min-w-0">
+          <a href="index.html" class="hover:text-gold transition">Home</a>
+          <a href="about.html" class="hover:text-gold transition">About Us</a>
+          <a href="accounting-bookkeeping.html" class="hover:text-gold transition">Accounting & Bookkeeping</a>
+          <a href="audit.html" class="hover:text-gold transition">Auditing</a>
+          <a href="taxation.html" class="hover:text-gold transition">Taxation</a>
+          <a href="compliance.html" class="hover:text-gold transition">Compliance</a>
+          <a href="Other services.html" class="hover:text-gold transition">Other Services</a>
+          <a href="contact.html" class="hover:text-gold transition">Contact</a>
+        </nav>
+        <div class="hidden md:block flex-shrink-0 ml-4">
+          <a href="contact.html" class="bg-[#3d2c06] text-white font-semibold text-sm px-4 py-2 rounded-md shadow hover:bg-gray-800 transition">
+            Apply Online
+          </a>
+        </div>
+        <button id="menuToggle" class="md:hidden text-gold focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden px-4 py-4 bg-white border-t border-gold space-y-2">
+        <a href="index.html" class="block text-dark hover:text-gold">Home</a>
+        <a href="about.html" class="block text-dark hover:text-gold">About Us</a>
+        <a href="accounting-bookkeeping.html" class="block text-dark hover:text-gold">Accounting & Bookkeeping</a>
+        <a href="audit.html" class="block text-dark hover:text-gold">Auditing | Audit Support</a>
+        <a href="taxation.html" class="block text-dark hover:text-gold">Taxation</a>
+        <a href="compliance.html" class="block text-dark hover:text-gold">Compliance</a>
+        <a href="Other services.html" class="block text-dark hover:text-gold">Other Services</a>
+        <a href="contact.html" class="block text-dark hover:text-gold">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white text-center px-6 md:px-12" style="background-image: url('/images/bgconatct8.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 max-w-4xl">
+        <h1 class="text-5xl md:text-6xl font-bold text-gold mb-8 leading-tight">Accounting & Bookkeeping</h1>
+        <p class="text-xl md:text-2xl leading-relaxed mb-4">
+          Streamline your finances with accuracy and integrity.
+        </p>
+        <p class="text-xl md:text-2xl leading-relaxed mb-4">
+          At <span class="text-gold font-semibold">Darbia</span>, we go beyond just numbers —
+          we provide clarity, ensure compliance with UAE regulations,
+          and support your business growth with strategic financial insights.
+        </p>
+        <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
+          From day-to-day bookkeeping to full financial reporting,
+          our expert team helps you stay organized, audit-ready,
+          and confident in your decision-making.
+        </p>
+      </div>
+    </section>
+<!-- Taxation Subservices Section -->
+<section class="py-20 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#3d2c06] mb-12 text-center">Our Accounting & Bookkeeping
+ Services Include</h2>
+    <div class="space-y-20">
+
+<!-- General Ledger Maintenance -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/general-ledger.jpg" alt="General Ledger" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">General Ledger Maintenance</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Recording all financial transactions in the company’s ledger to ensure accurate reporting. Our team ensures every credit and debit is correctly categorized, allowing for real-time financial tracking and audit readiness.
+        We also implement robust checks and balances to help identify inconsistencies early and maintain transparency across financial records.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Accounts Payable & Receivable Management -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">Accounts Payable & Receivable Management</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Managing incoming and outgoing payments to maintain healthy cash flow. We streamline invoice tracking, payment scheduling, and follow-ups to ensure your business stays liquid and vendors stay satisfied.
+        Our automation tools reduce human error and speed up transaction processing, helping your business maintain financial agility.
+      </p>
+    </div>
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/accounts-management.jpg" alt="Accounts Management" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+  </div>
+</section>
+
+<!-- Bank Reconciliation -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/bank-reconciliation.jpg" alt="Bank Reconciliation" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">Bank Reconciliation</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Matching the company’s financial records with bank statements to ensure accuracy. This process helps uncover errors, prevent fraud, and maintain a solid financial foundation.
+        Regular reconciliation reduces discrepancies and supports a clearer view of your real-time cash position.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Financial Statement Preparation -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">Financial Statement Preparation</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Preparing essential reports like balance sheets, income statements, and cash flow statements. These reports help stakeholders understand business performance and support regulatory filings.
+        Our statements adhere to international accounting standards and are ready for audits or board presentations.
+      </p>
+    </div>
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/financial-statements.jpg" alt="Financial Statements" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+  </div>
+</section>
+
+<!-- Payroll Processing -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/payroll.jpg" alt="Payroll Processing" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">Payroll Processing</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Accurate calculation and disbursement of employee salaries, benefits, and deductions. We ensure compliance with local labor laws and timely submissions to avoid penalties and maintain staff satisfaction.
+        Our payroll services also include payslip generation, statutory reporting, and leave accrual management.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Inventory & Asset Management -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">Inventory & Asset Management</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Monitoring and recording inventory and fixed assets to control costs and ensure proper valuation. We help you track depreciation, asset lifecycle, and inventory turnover for better decision-making.
+        With real-time tracking and inventory alerts, your business can prevent stock-outs or overstocking.
+      </p>
+    </div>
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/inventory-assets.jpg" alt="Inventory Management" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+  </div>
+</section>
+
+<!-- Monthly / Quarterly / Year-End Closing -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/closing.jpg" alt="Year-End Closing" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">Monthly / Quarterly / Year-End Closing</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Finalizing accounts at regular intervals to prepare for financial analysis or audits. Our systematic approach ensures all records are reviewed, reconciled, and summarized accurately.
+        We help identify anomalies early and ensure smooth financial closure without last-minute surprises.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- VAT-Compliant Bookkeeping -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">VAT-Compliant Bookkeeping</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Recording transactions in line with UAE VAT laws for proper filing and audit readiness. We handle input/output tax calculations, maintain VAT records, and ensure timely submissions.
+        Our processes ensure that you're always ready for tax audits with accurate and complete documentation.
+      </p>
+    </div>
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/vat.jpg" alt="VAT Bookkeeping" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+  </div>
+</section>
+
+<!-- Financial Data Migration -->
+<section class="py-16 bg-[#f4f1eb] border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+    <div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent rounded-xl z-0 shadow-2xl"></div>
+  <img src="/images/data-migration.jpg" alt="Data Migration" class="rounded-xl shadow-md w-full h-full max-h-[400px] object-cover relative z-10">
+</div>
+    <div>
+      <h2 class="text-2xl font-bold text-[#3d2c06] mb-4">Financial Data Migration</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Securely transferring financial data from legacy systems to modern accounting platforms. Our structured migration process minimizes errors, protects data integrity, and ensures continuity.
+        We perform pre- and post-migration audits to confirm that nothing is lost or duplicated in the process.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CTA Section -->
+  <section class="relative py-20 bg-[#f4f1eb] text-center overflow-hidden">
+      <h3 class="text-3xl font-bold text-[#3d2c06] mb-4 underline-gold">Need help managing your books?</h3>
+      <p class="text-gray-700 mb-6">Let Darbia handle the numbers so you can focus on growing your business.</p>
+      <a href="contact.html" class="px-6 py-3 bg-[#3d2c06] text-white font-semibold rounded-full shadow hover:shadow-xl transition">
+        Contact Us Today
+      </a>
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#3d2c06] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm md:text-base">&copy; 2025 Darbia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('preloader')?.style.display = 'none';
+    });
+
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
